@@ -27,3 +27,4 @@ npm install
 ```
 npm run dev
 ```
+O servidor está configurado para o endereço: 127.0.0.1:5500
