@@ -23,7 +23,7 @@ cd nlw/
 #instalar as dependências
 npm install
 ```
-### Para rodar
+### Para rodar o servidor
 
 ```
 npm run dev
