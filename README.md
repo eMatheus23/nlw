@@ -15,7 +15,7 @@ Você precisa clonar este respositório e instalar as dependências
 
 ```
 #clonar o respositório
-git clone https://github.com/nicholasscabral/Proffy.git
+git clone https://github.com/eMatheus23/nlw.git
 
 #ir para a pasta do projeto
 cd nlw/
