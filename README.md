@@ -5,9 +5,8 @@ Projeto especial desenvolvido na Next Level Week #2, da Rocketseat, que consiste
 <ul>
     <li><a href="https://nodejs.org/en/">Node.js</a></li>
     <li><a href="https://expressjs.com/pt-br/">Express</a></li>
-    <li><a href="https://www.npmjs.com/package/sqlite-async">sqlite-async</a></li>
     <li><a href="https://mozilla.github.io/nunjucks/">nunjucks</a></li>
-    <li><a href="https://code.visualstudio.com/">VS code</a></li>
+    <li><a href="https://www.npmjs.com/package/sqlite-async">sqlite-async</a></li>
 </ul>
 
 ## Como usar
