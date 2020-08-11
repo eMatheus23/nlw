@@ -12,10 +12,9 @@ Database.then(async(db) => {
     }
 
     classValue = {
-        subject: "Química", 
+        subject: 1, 
         cost: "20", 
-        weekday: [0], 
-        // o proffy id virá pelo banco de dados
+        // o proffy id virá pelo banco de dados         // weekday: [0], 
     }
 
     classScheduleValues = [
@@ -48,8 +47,26 @@ Database.then(async(db) => {
         JOIN classes ON (classes.proffy_id = proffys.id)
         WHERE classes.proffy_id = 1;
     `)
-    console.log(selectClassesAndProffys)
+    // console.log(selectClassesAndProffys)
 
-    // 
+    // o horário que a pessoa trabalha, por exemplo, é das 8h - 18h
+    // o horário do time_from (8h) precisa ser maior ou igual ao horário solicitado
+    // o time_to precisa ser menor que o horário solicitado
+    const selectClassesSchedules = await db.all(`
+        SELECT class_schedule.*
+        FROM class_schedule
+        WHERE class_schedule.class_id = "1"
+        AND class_schedule.weekday = "0"
+        AND class_schedule.time_from <= "1300"
+        AND class_schedule.time_to > "1300"
+        
+    `)
+
+    // console.log(selectClassesSchedules)
+
 
 })
+
+    // ex: uma pesquisa de 7h, vai ser maior do que o intervalo
+    // uma pesquisa de 10h estará dentro do intervalo
+    // uma pesquisa de 20h vai ser menor que o intervalo
